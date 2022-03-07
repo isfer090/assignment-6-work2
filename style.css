@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header-menu{
+    background-color: black;
+    text-align: center;
+}
+.header-menu ul li{
+    font-size: 19px;
+    color: white;
+    display: inline-block;
+    padding: 40px 30px;
+
+    position: relative;
+}
+.header-menu ul li ul{
+    top: 100%;
+    left: 0;
+    position: absolute;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.header-menu ul li ul li:first-child{
+    border-top: 5px solid #3498db;
+}
+.header-menu ul li ul li{
+    width: 250px;
+    padding: 20px 20px;
+    background-color: black;
+    transition: .3s;
+    position: relative;
+}
+
+.header-menu ul li ul li ul li{
+    visibility: hidden;
+    opacity: 0;
+
+}
+.header-menu ul li ul li:hover li{
+    visibility: visible;
+    opacity: 1;
+
+}
+.header-menu ul li ul li ul li{
+    width: 250px;
+    padding: 20px 20px;
+    background-color: black;
+
+}
+.header-menu ul li ul li ul{
+    position: absolute;
+    left: 100%;
+}
+.header-menu ul li ul li:hover{
+    background-color: royalblue;
+}
+
+
+/* this is banner */
+
+.banner{
+    background-image: url(./young-mens.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 280px 0;
+    text-align: center;
+}
+.banner h1{
+    background-color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.banner div{
+    background-color: white;
+    font-size: 34px;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.banner a{
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 2px;
+    transition: .4s;
+}
+.banner a:hover{
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+}
+
+/* this is paragrapg section */
+
+.paragrapg{
+    text-align: center;
+}
+.paragrapg-box{
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+.paragrapg-box h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.paragrapg-box P{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* this is email section */
+.email-box{
+    padding: 100px;
+    background-color: #f7f7f7;
+    text-align: center  ;
+}
+.email-box input{
+    font-size: 18px;
+    width: 500px;
+    padding: 16px 20px;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.email-box button{
+    font-size: 18px;
+    border: none;
+    padding: 18px 40px;
+    background-color: red;
+    color: white;
+}
+.email-box button a{
+    color: white;
+    text-decoration: none;
+}
+/* this is chart section */
+
+.clear::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.chart{
+    padding: 20px;
+}
+.chart-section{
+    border: 5px dashed black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 240px;
+    padding-left:100px;
+    padding-right:100px;
+}
+.chart-section h2{
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.chart-box{
+    width: 40.3%;
+    float: left;
+    margin-left: -100px;
+}
+.chart-box ul li{
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 180px;
+}
+
+/* this is footer menu */
+
+.footer{
+    text-align: center  ;
+    background-color: black;
+    height: 140px;
+}
+.footer h2{
+    color: white;
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+.footer ul li{
+    display: inline-block;
+ 
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #5ea5fa;
+    height: 50px;
+    width: 50px;
+    line-height: 51px;
+}
+.footer ul li a{
+    color: black;
+}
+.footer ul li i{
+    margin-left: 2px;
+}
